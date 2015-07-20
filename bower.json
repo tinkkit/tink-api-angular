@@ -18,7 +18,7 @@
     "tink-api-javascript": "latest"
   },
   "devDependencies": {
-    "angular-mocks": "~1.3.12",
-    "angular-scenario": "~1.3.12"
+    "angular-mocks": "~1.4.3",
+    "angular-scenario": "~1.4.3"
   }
 }
