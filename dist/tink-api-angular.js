@@ -25,6 +25,11 @@
               sideToggle[id].toggleMenu();
             }
           },
+          reloadById:function(id){
+            if(sideToggle[id]){
+              sideToggle[id].reload();
+            }
+          },
           closeById:function(id){
             if(sideToggle[id]){
               sideToggle[id].closeMenu();
