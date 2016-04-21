@@ -13,9 +13,19 @@
     },
     $get: ['$window', function ($window) {
        var sideToggle = {};
-
+      var sideNav = {};
       return {
         sideNavigation: $window.tinkApi.sideNavigation,
+        sideNav:{
+          register:function(id,sideElem){
+            sideNav[id]=sideElem;
+          },
+          reloadById:function(id){
+            if(sideNav[id]){
+              $window.tinkApi.sideNavigation(sideNav[id]).recalculate();
+            }
+          }
+        },
         sideNavToggle:{
           register:function(id,sideElem){
             sideToggle[id]=sideElem;
