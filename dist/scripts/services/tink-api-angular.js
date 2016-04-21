@@ -40,6 +40,11 @@
               sideToggle[id].reload();
             }
           },
+           recalculate:function(id){
+            if(sideToggle[id]){
+              sideToggle[id].recalculate();
+            }
+          },
           closeById:function(id){
             if(sideToggle[id]){
               sideToggle[id].closeMenu();
